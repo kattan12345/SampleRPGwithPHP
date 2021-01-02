@@ -15,6 +15,9 @@ class Enemy {
     }
     
     public function tookDamage($damage) {
-        
+        $this->hitPoint -= $damage;
+        if ($this->hitPoint < 0) {
+            $this->hitPoint = 0;
+        }
     }
 }
