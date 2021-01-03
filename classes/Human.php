@@ -11,7 +11,7 @@ class Human {
     public function doAttack($enemy) {
         echo "『" . $this->name . "』の攻撃" . PHP_EOL;
         echo "【" . $enemy->name . "】に" . $this->attackPoint . "のダメージ" . PHP_EOL;
-        $enemy->tookDamage($this.attackPoint);
+        $enemy->tookDamage($this->attackPoint);
     }
     
     public function tookDamage($damage) {
